@@ -1,0 +1,8 @@
+node_js:
+  7 # use node version 7
+branches:
+  only:
+  - master # auto build and deploy in only master branch
+script: # run after installed
+- yarn # install node module
+- yarn build # build project
