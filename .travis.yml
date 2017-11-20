@@ -6,3 +6,8 @@ branches:
 script: # run after installed
 - yarn # install node module
 - yarn build # build project
+deploy:
+  provider: firebase
+  token:
+    secure: ${firebaseToken}
+  message: "your message"
